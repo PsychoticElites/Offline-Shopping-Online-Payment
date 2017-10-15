@@ -16,39 +16,159 @@
         android:layout_height="match_parent"
         android:id="@+id/linearLayout1"
         android:layout_margin="2.5dp"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:layout_marginBottom="2.5dp">
-        <TextView
+        android:layout_marginBottom="2.5dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/receipt_TxnId"
-            android:hint="Txn Id"
-            android:textColor="#000000" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/receipt_Amount"
-            android:hint="Total Amount"
-            android:textColor="#000000" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/receipt_TxnTime"
-            android:hint="Txn Time"
-            android:textColor="#000000" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/receipt_StoreName"
-            android:textColor="#000000"
-            android:hint="Store Name" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/receipt_RewardGained"
-            android:textColor="#000000"
-            android:hint="Reward Gained" />
+            android:id="@+id/linearLayout2"
+            android:weightSum="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout3"
+                android:layout_weight="0.2"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="left">
+                <TextView
+                    android:text="Test Store 2"
+                    android:id="@+id/receipt_StoreName"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:gravity="left" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout5"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginBottom="1.5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2.5dp"
+                    android:gravity="left">
+                    <TextView
+                        android:text="Reward Gained: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView3"
+                        android:textColor="#bac3d3" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linearLayout6"
+                        android:layout_marginLeft="2.5dp">
+                        <TextView
+                            android:text="¤"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView4"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:text="500"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/receipt_RewardGained"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="2.5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout5"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginBottom="1.5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2.5dp"
+                    android:gravity="left">
+                    <TextView
+                        android:text="Txn ID: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView3"
+                        android:textColor="#bac3d3" />
+                    <TextView
+                        android:text="tx8-20312991912"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/receipt_TxnId"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="2.5dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout5"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginBottom="1.5dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2.5dp"
+                    android:gravity="left">
+                    <TextView
+                        android:text="Txn Time: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView3"
+                        android:textColor="#bac3d3" />
+                    <TextView
+                        android:text="2017-09-23 08:00:23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/receipt_TxnTime"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="2.5dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout4"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2.5dp"
+                android:padding="2.5dp"
+                android:background="@drawable/uneditabletextlayout">
+                <TextView
+                    android:text="₹"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView1"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+                <TextView
+                    android:text="999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/receipt_Amount"
+                    android:layout_marginLeft="2dp"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
