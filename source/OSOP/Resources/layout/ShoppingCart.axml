@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/linearLayout1"
+    p1:background="@drawable/bgmockup2"
+    p1:gravity="bottom"
+    p1:weightSum="1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/linearLayout3"
+        p1:layout_weight="0.99"
+        p1:gravity="center">
+        <LinearLayout
+            p1:orientation="vertical"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/layoutEmptyCart"
+            p1:gravity="center"
+            p1:visibility="visible">
+            <ImageView
+                p1:src="@drawable/ic_emptycart"
+                p1:layout_width="100dp"
+                p1:layout_height="100dp"
+                p1:id="@+id/imageView1"
+                p1:layout_margin="5dp"
+                p1:visibility="visible" />
+            <TextView
+                p1:text="Cart Empty"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textCartEmpty"
+                p1:textSize="25sp"
+                p1:layout_marginLeft="10dp"
+                p1:layout_marginRight="10dp"
+                p1:textAllCaps="false"
+                p1:textColor="#01579b"
+                p1:visibility="visible" />
+            <TextView
+                p1:text="Click &quot;ADD ITEMS&quot; to add Item to Cart"
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/textCartDescription"
+                p1:textSize="15sp"
+                p1:layout_marginTop="5dp"
+                p1:textColor="#01579b"
+                p1:visibility="visible" />
+            <TextView
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/itemName"
+                p1:textColor="#01579b"
+                p1:textSize="30sp"
+                p1:layout_margin="5dp"
+                p1:visibility="gone"
+                p1:hint="ITEM NAME" />
+            <TextView
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/itemPrice"
+                p1:textSize="25sp"
+                p1:textColor="#01579b"
+                p1:layout_marginBottom="5dp"
+                p1:layout_marginRight="5dp"
+                p1:layout_marginLeft="5dp"
+                p1:visibility="gone"
+                p1:hint="Item Price"
+                p1:textAlignment="center"
+                p1:gravity="center" />
+            <TextView
+                p1:layout_width="wrap_content"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/shopName"
+                p1:textSize="20sp"
+                p1:textColor="#01579b"
+                p1:layout_marginLeft="5dp"
+                p1:layout_marginRight="5dp"
+                p1:layout_marginBottom="5dp"
+                p1:visibility="gone"
+                p1:hint="Shop Name" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        p1:orientation="horizontal"
+        p1:layout_width="match_parent"
+        p1:layout_height="50dp"
+        p1:id="@+id/linearLayout2"
+        p1:weightSum="1"
+        p1:layout_margin="10dp"
+        p1:layout_weight="0.01">
+        <Button
+            p1:text="ADD ITEMS"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/buttonScanQR"
+            p1:layout_weight="0.5"
+            p1:background="@drawable/mockup2_layoutborder"
+            p1:layout_margin="5dp"
+            p1:textColor="#01579b"
+            p1:textSize="15sp"
+            p1:textStyle="bold"
+            p1:hapticFeedbackEnabled="true" />
+        <Button
+            p1:text="CHECKOUT"
+            p1:layout_width="wrap_content"
+            p1:layout_height="match_parent"
+            p1:id="@+id/buttonCheckout"
+            p1:layout_weight="0.5"
+            p1:background="@drawable/roundbutton_green"
+            p1:layout_margin="5dp"
+            p1:textSize="15sp"
+            p1:textStyle="bold"
+            p1:textColor="#ffffff"
+            p1:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

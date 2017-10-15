@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center">
+    <ImageView
+        android:src="@drawable/bgmockup2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mockup2_layoutborder" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLayout_SignupScreen"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp">
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout2"
+                android:background="@drawable/mockup2_layoutborder"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <ImageView
+                    android:src="@drawable/ic_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Signup_CloseLayout"
+                    android:layout_gravity="right|top"
+                    android:hapticFeedbackEnabled="true" />
+                <TextView
+                    android:text="First Time?"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SignupScreen_TagLine1"
+                    android:textColor="#01579b"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text="Shop with Us!"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="193.0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SignupScreen_TagLine2"
+                    android:textColor="#01579b"
+                    android:textSize="25sp"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/SignupScreen_FullName"
+                    android:hint="Full Name"
+                    android:password="false"
+                    android:textColorHint="#bac3d3"
+                    android:textColor="#000000"
+                    android:background="@drawable/mockup2_textfieldlowerborder"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:paddingLeft="1dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:inputType="textPersonName"
+                    android:autoText="true" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/SignupScreen_PhoneNumber"
+                    android:hint="Phone Number"
+                    android:password="false"
+                    android:textColorHint="#bac3d3"
+                    android:textColor="#000000"
+                    android:background="@drawable/mockup2_textfieldlowerborder"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:paddingLeft="1dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:inputType="phone"
+                    android:autoText="true"
+                    android:maxLength="10" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/SignupScreen_EmailID"
+                    android:textColor="#000000"
+                    android:hint="Email Address"
+                    android:textColorHint="#bac3d3"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="1dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/mockup2_textfieldlowerborder"
+                    android:inputType="textEmailAddress"
+                    android:autoText="true" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/SignupScreen_Password"
+                    android:hint="Password"
+                    android:password="true"
+                    android:textColorHint="#bac3d3"
+                    android:textColor="#000000"
+                    android:background="@drawable/mockup2_textfieldlowerborder"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:paddingLeft="1dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:inputType="textPassword" />
+                <TextView
+                    android:text="Terms and Conditions"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SignupScreen_Terms"
+                    android:layout_gravity="right"
+                    android:textStyle="normal"
+                    android:textColor="#FF553F"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:hapticFeedbackEnabled="true" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/mockup2_layoutborder"
+            android:layout_marginBottom="15dp">
+            <ImageView
+                android:src="@drawable/ic_googleicon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/SignupScreen_GoogleSignup"
+                android:layout_marginLeft="5dp"
+                android:hapticFeedbackEnabled="true" />
+            <TextView
+                android:text="Try New Google Sign-Up Experience"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/SignupScreen_GoogleSignup1"
+                android:gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:textColor="#01579b"
+                android:textStyle="bold"
+                android:hapticFeedbackEnabled="true" />
+        </LinearLayout>
+        <Button
+            android:text="Register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/SignupScreen_SignupButton"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>

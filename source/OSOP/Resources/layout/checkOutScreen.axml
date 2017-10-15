@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center">
+    <ImageView
+        android:src="@drawable/walletupdate_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mockup2_layoutborder" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLayout_SignupScreen"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="50dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout6"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:text="Total Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/updateWallet_Tagline1"
+                    android:layout_gravity="center" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout3"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp">
+                    <TextView
+                        android:text="₹"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/updateWallet_RupeeSymbol"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonScanQR"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:hint="x" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="250.0dp"
+                android:id="@+id/linearLayout5"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/roundbutton_layout2"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:paddingBottom="5dp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerScreen"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:text="MAKE PAYMENT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/checkout_PaymentInit"
+            android:background="@drawable/roundbutton_green"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+        <TextView
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updateWallet_Cancel"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:hapticFeedbackEnabled="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center">
+    <ImageView
+        android:src="@drawable/bgmockup2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mockup2_layoutborder" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutBase"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MainLayout_LoginScreen"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+            <ScrollView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView1">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Mockup2linearLayout2_1">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Mockup2linearLayout2"
+                        android:background="@drawable/mockup2_layoutborder">
+                        <ImageView
+                            android:src="@drawable/ic_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/loginScreen_LoginCloseLayout"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="10dp"
+                            android:hapticFeedbackEnabled="true" />
+                        <TextView
+                            android:text="Hello There! Welcome Back!"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="173.0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/LoginScreen_Tagline1"
+                            android:textColor="#01579b"
+                            android:textSize="25sp"
+                            android:layout_marginBottom="70dp"
+                            android:layout_marginLeft="15dp" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:id="@+id/LoginScreen_EmailID"
+                            android:textColor="#000000"
+                            android:hint="Email Address"
+                            android:textColorHint="#bac3d3"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="30dp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="1dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/mockup2_textfieldlowerborder"
+                            android:inputType="textEmailAddress"
+                            android:autoText="true"
+                            android:text="test4@test.com" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:id="@+id/LoginScreen_Password"
+                            android:hint="Password"
+                            android:password="true"
+                            android:textColorHint="#bac3d3"
+                            android:textColor="#000000"
+                            android:background="@drawable/mockup2_textfieldlowerborder"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:paddingLeft="1dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:inputType="textPassword"
+                            android:text="myPassword!" />
+                        <TextView
+                            android:text="Forgot your Password?"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/LoginScreen_ForgotPassword"
+                            android:layout_gravity="right"
+                            android:textStyle="normal"
+                            android:textColor="#FF553F"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:hapticFeedbackEnabled="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout2"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/mockup2_layoutborder"
+                        android:layout_marginBottom="15dp">
+                        <ImageView
+                            android:src="@drawable/ic_googleicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/LoginScreen_GoogleSignup"
+                            android:layout_marginLeft="5dp"
+                            android:hapticFeedbackEnabled="true" />
+                        <TextView
+                            android:text="Try New Google Sign-In Experience"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/LoginScreen_GoogleSignup1"
+                            android:gravity="left|center"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#01579b"
+                            android:textStyle="bold"
+                            android:hapticFeedbackEnabled="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <Button
+                android:text="Sign In"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/LoginScreen_LoginButton"
+                android:background="@drawable/mockup2_signupbuttonred"
+                android:textStyle="bold"
+                android:hapticFeedbackEnabled="true"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MainLayout_MainScreen"
+            android:layout_marginBottom="20dp"
+            android:visibility="visible">
+            <TextView
+                android:text="OFFLINE SHOPPING ONLINE PAYMENT"
+                android:layout_width="230.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainLayoutTagline1"
+                android:textColor="#01579b"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginBottom="35dp" />
+            <TextView
+                android:text="Easiest way to do Shopping!"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="197.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mainLayoutTagline2"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:layout_marginBottom="50dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/linearLayout1"
+                android:weightSum="1">
+                <Button
+                    android:text="Sign In"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mainLayout_loginButton"
+                    android:layout_weight="0.5"
+                    android:textColor="#01579b"
+                    android:textStyle="bold"
+                    android:background="@drawable/mockup2_buttonredborder"
+                    android:hapticFeedbackEnabled="true" />
+                <Button
+                    android:text="Register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mainLayout_SignupButton"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:textColor="#01579b"
+                    android:background="@drawable/mockup2_buttonredborder2"
+                    android:hapticFeedbackEnabled="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

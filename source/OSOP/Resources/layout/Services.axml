@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center">
+    <ImageView
+        android:src="@drawable/bgmockup2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView1"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mockup2_layoutborder" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainLayout_SignupScreen"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <Button
+            android:text="QR Shopping"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/services_QRShopping"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="Add Amount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/services_AddAmount"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="E-Reciepts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/services_eReciepts"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="My Rewards"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/services_MyRewards"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="Profile Information"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/services_ProfileInfo"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp" />
+        <Button
+            android:text="Payment Info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/services_PaymentInfo"
+            android:background="@drawable/mockup2_signupbuttonred"
+            android:textStyle="bold"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>
