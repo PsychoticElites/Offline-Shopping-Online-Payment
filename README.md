@@ -159,7 +159,7 @@ But, if for some reason, you don't want to or can't install Visual Studio, you w
 
 You can check the Demonstration Video On YouTube :
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/S82XQPmhBbc/0.jpg)](https://www.youtube.com/watch?v=S82XQPmhBbc)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/M7P2MNnJ3XE/0.jpg)](https://www.youtube.com/watch?v=M7P2MNnJ3XE)
 
 ## 10. F.A.Q
 **Q. What if this project decreases human employment?**
