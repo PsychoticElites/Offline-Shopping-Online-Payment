@@ -163,15 +163,19 @@ You can check the Demonstration Video On YouTube :
 
 ## 10. F.A.Q
 **Q. What if this project decreases human employment?**
+
 **A.** By recent data given by researches done for many years, Scientists have proved that the human employment have been increased recently due to advancement of technologies.
 
 **Q. What is the use of creating this application?**
+
 **A.** This application deals with the problem faced by customers ie. carrying cash, standing in long queues and taking care of various receipts.
 
 **Q. Are there any reward points?**
+
 **A.** Yes, rewards points have been provided which can be used to avail discounts upto 25% on the total bill.
 
 **Q. Is our card information secured?**
+
 **A. Yes, the transfer of information is encrypted by AES 256bit which is decrypted at the server and therefore is completely secured.
 
 ## 11.   Technology Stack Used
