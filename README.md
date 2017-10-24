@@ -158,7 +158,7 @@ Let  us remind you again that the minimum Android OS that you need to run this p
 But, if for some reason, you don't want to or can't install Visual Studio, you will need to have .NET, Xamarin, Android SDK and required Packages in your system's local path for you to be able to compile and execute this application project.
 
 - #### QR Codes :
-     You will be needing "QR Codes" to scan the item(s) and get their prizes in your shopping cart. You can get those QR Codes from the [QR Codes Directory](https://github.com/PsychoticElites/Offline-Shopping-Online-Payment/tree/master/QR%20CODES).
+     You will be needing "QR Codes" to scan the item(s) and get their prizes in your shopping cart. You can get those QR Codes from the [QR Codes Directory](https://github.com/PsychoticElites/Offline-Shopping-Online-Payment/tree/master/QR%20CODES). You can directly scan these QR Codes by goign into the "QR Shopping" Menu.
 
 You can check the Demonstration Video On YouTube :
 
